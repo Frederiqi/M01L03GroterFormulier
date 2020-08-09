@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- hier zet je de code in de head tags -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Formulier groter receptenwebsite</title>
+</head>
+
+<body>
+  <!-- hier zet je de code in de body tags-->
+  <header>
+    <h1>Deel dat overheerlijke recept</h1>
+  </header>
+  <main>
+    <section>
+      <p>
+        Vul het formulier in en deel jouw recept via onze website.
+      </p>
+      <form name="recept-delen" method="POST" data-netlify="true">
+        <p>Naam:<input name="Naam" type="text" /></p>
+        <p>E-mailadres:<input name="E-mailadres" type="email" /></p>
+        <p>Telefoon:<input name="Telefoon" type="tel" /></p>
+        <p>Leeftijd:<input name="Leeftijd" type="number" /></p>
+        <p>Geboortedatum:<input name="Geboortedatum" type="date"></p>
+        <p>Geslacht:<br>
+          <input name="Geslacht" id="man" type="radio" value="man" />Man<br>
+          <input name="Geslacht" id="vrouw" type="radio" value="vrouw" />Vrouw<br>
+          <input name="Geslacht" id="onzijdig" type="radio" value="onzijdig" />Onzijdig
+        </p>
+        <p>Favoriete cuisine (meerdere keuzes mogelijk):<br>
+          <input name="Cuisine1" id="Cuisine1" type="checkbox" value="Frans" />Frans<br>
+          <input name="Cuisine2" id="Cuisine2" type="checkbox" value="Italiaans" />Italiaans<br>
+          <input name="Cuisine3" id="Cuisine3" type="checkbox" value="Spaans" />Spaans<br>
+          <input name="Cuisine4" id="Cuisine4" type="checkbox" value="Arabisch" />Arabisch
+        </p>
+        <p>Favoriete kleur schort:<input name="Schort" type="color" /></p>
+        <p>Biografie:<br>
+          <textarea name="Bericht" rows="7" cols="30">
+              Vertel meer over jezelf en je ervaring op het gebied van kokkerellen.
+            </textarea></p>
+        <p>Upload je recept:<input name="Recept" type="file" /></p>
+        <p>Link naar je website met recepten:<input name="URL" type="url" /></p>
+        <p><input type="reset" /></p>
+        <p><input type="submit" /></p>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
